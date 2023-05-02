@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="amarelo">#FFEB3B</color>
+    <color name="corBotoes">#43A6D3</color>
+
 </resources>
