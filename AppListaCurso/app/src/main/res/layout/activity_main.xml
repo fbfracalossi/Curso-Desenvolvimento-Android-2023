@@ -7,7 +7,6 @@
     tools:context=".view.MainActivity">
 
     <TextView
-        android:background="@color/amarelo"
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
