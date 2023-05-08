@@ -19,5 +19,10 @@ Pessoa pessoa;
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
+        pessoa.setPrimeiroNome("Flavio");
+        pessoa.setSobreNome("Fracalossi");
+        pessoa.setCursoDesejado("Android");
+        pessoa.setTelefoneContato("48998218360");
+
     }
 }
