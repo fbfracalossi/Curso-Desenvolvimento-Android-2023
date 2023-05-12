@@ -16,7 +16,9 @@ public class Pessoa {
         return primeiroNome;
     }
 
-    public void setPrimeiroNome(String primeiroNome) {this.primeiroNome = primeiroNome; }
+    public void setPrimeiroNome(String primeiroNome) {
+        this.primeiroNome = primeiroNome;
+    }
 
     public String getSobreNome() {
         return sobreNome;
