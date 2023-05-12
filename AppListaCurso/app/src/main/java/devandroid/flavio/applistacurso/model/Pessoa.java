@@ -3,7 +3,7 @@ package devandroid.flavio.applistacurso.model;
 public class Pessoa {
 
 
-    // Construtor
+    //Construtor
     //Atributos - Objetos - Molde - Modelo - Template
     //Métodos de Acesso - Gets and Sets
 
@@ -16,9 +16,7 @@ public class Pessoa {
         return primeiroNome;
     }
 
-    public void setPrimeiroNome(String primeiroNome) {
-        this.primeiroNome = primeiroNome;
-    }
+    public void setPrimeiroNome(String primeiroNome) {this.primeiroNome = primeiroNome; }
 
     public String getSobreNome() {
         return sobreNome;

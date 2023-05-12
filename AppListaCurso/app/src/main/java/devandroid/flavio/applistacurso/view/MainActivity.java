@@ -24,5 +24,7 @@ Pessoa pessoa;
         pessoa.setCursoDesejado("Android");
         pessoa.setTelefoneContato("48998218360");
 
+        int parada = 0;
+
     }
 }
