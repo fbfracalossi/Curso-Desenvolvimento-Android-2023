@@ -25,8 +25,6 @@ String dadosOutraPessoa;
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
-        //Atribuir conteúdo, dados e valores para o Objeto
-        //Conforme o seu MODELO, TEMPLATE
         pessoa.setPrimeiroNome("Flavio");
         pessoa.setSobreNome("Fracalossi");
         pessoa.setCursoDesejado("Android");
@@ -51,13 +49,13 @@ String dadosOutraPessoa;
 
 
         dadosOutraPessoa = "Primeiro nome: ";
-        dadosOutraPessoa += pessoa.getPrimeiroNome();
+        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
         dadosOutraPessoa += " Sobrenome: ";
-        dadosOutraPessoa += pessoa.getSobreNome();
+        dadosOutraPessoa += outraPessoa.getSobreNome();
         dadosOutraPessoa += " Curso Desejado: ";
-        dadosOutraPessoa += pessoa.getCursoDesejado();
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
         dadosOutraPessoa += " Telefone de Contado: ";
-        dadosOutraPessoa += pessoa.getTelefoneContato();
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();
 
 
 
