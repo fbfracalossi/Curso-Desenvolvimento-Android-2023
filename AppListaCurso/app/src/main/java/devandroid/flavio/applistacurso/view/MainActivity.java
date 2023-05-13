@@ -12,6 +12,11 @@ Pessoa pessoa;
 Pessoa outraPessoa;
 
 
+String dadosPessoa; //pascalCase - camelCase
+String dadosOutraPessoa;
+
+
+
 
 
     @Override
@@ -33,7 +38,21 @@ Pessoa outraPessoa;
         outraPessoa.setCursoDesejado("Java");
         outraPessoa.setTelefoneContato("6738861821");
 
+        dadosPessoa = "Primeiro nome: ";
+        dadosPessoa += pessoa.getPrimeiroNome();
+        dadosPessoa += "Sobrenome: ";
+        dadosPessoa += pessoa.getSobreNome();
+        dadosPessoa += "Curso Desejado: ";
+        dadosPessoa += pessoa.getCursoDesejado();
+        dadosPessoa += "Telefone de Contado: ";
+        dadosPessoa += pessoa.getTelefoneContato();
+
         int parada = 0;
+
+
+
+
+
 
     }
 }
