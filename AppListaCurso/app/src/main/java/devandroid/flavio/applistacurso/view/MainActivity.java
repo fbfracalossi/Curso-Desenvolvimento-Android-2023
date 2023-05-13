@@ -38,14 +38,28 @@ String dadosOutraPessoa;
         outraPessoa.setCursoDesejado("Java");
         outraPessoa.setTelefoneContato("6738861821");
 
+
+
         dadosPessoa = "Primeiro nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
-        dadosPessoa += "Sobrenome: ";
+        dadosPessoa += " Sobrenome: ";
         dadosPessoa += pessoa.getSobreNome();
-        dadosPessoa += "Curso Desejado: ";
+        dadosPessoa += " Curso Desejado: ";
         dadosPessoa += pessoa.getCursoDesejado();
-        dadosPessoa += "Telefone de Contado: ";
+        dadosPessoa += " Telefone de Contado: ";
         dadosPessoa += pessoa.getTelefoneContato();
+
+
+        dadosOutraPessoa = "Primeiro nome: ";
+        dadosOutraPessoa += pessoa.getPrimeiroNome();
+        dadosOutraPessoa += " Sobrenome: ";
+        dadosOutraPessoa += pessoa.getSobreNome();
+        dadosOutraPessoa += " Curso Desejado: ";
+        dadosOutraPessoa += pessoa.getCursoDesejado();
+        dadosOutraPessoa += " Telefone de Contado: ";
+        dadosOutraPessoa += pessoa.getTelefoneContato();
+
+
 
         int parada = 0;
 
