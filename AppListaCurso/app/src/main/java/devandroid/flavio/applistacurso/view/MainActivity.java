@@ -3,6 +3,7 @@ package devandroid.flavio.applistacurso.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.flavio.applistacurso.R;
 import devandroid.flavio.applistacurso.model.Pessoa;
@@ -57,13 +58,8 @@ String dadosOutraPessoa;
         dadosOutraPessoa += " Telefone de Contado: ";
         dadosOutraPessoa += outraPessoa.getTelefoneContato();
 
-
-
-        int parada = 0;
-
-
-
-
+        Log.i("POOAndroid", "Objeto pessoa: "+pessoa.toString());
+        Log.i("POOAndroid", "Objeto outraPessoa: "+outraPessoa.toString());
 
 
     }
