@@ -55,10 +55,10 @@ Button btnFinalizar;
         btnSalvar = findViewById(R.id.btnSalvar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
 
-        editPrimeiroNome.setText(pessoa.getPrimeiroNome());
-        editSobrenomeAluno.setText(pessoa.getSobreNome());
-        editNomeCurso.setText(pessoa.getCursoDesejado());
-        editTelefoneContato.setText(pessoa.getTelefoneContato());
+        editPrimeiroNome.setText(outraPessoa.getPrimeiroNome());
+        editSobrenomeAluno.setText(outraPessoa.getSobreNome());
+        editNomeCurso.setText(outraPessoa.getCursoDesejado());
+        editTelefoneContato.setText(outraPessoa.getTelefoneContato());
 
 
 
