@@ -1,7 +1,5 @@
 package devandroid.flavio.applistacurso.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,27 +7,23 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import devandroid.flavio.applistacurso.R;
 import devandroid.flavio.applistacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
-Pessoa pessoa;
-Pessoa outraPessoa;
+    Pessoa pessoa;
+    Pessoa outraPessoa;
 
+    EditText editPrimeiroNome;
+    EditText editSobrenomeAluno;
+    EditText editNomeCurso;
+    EditText editTelefoneContato;
 
-String dadosPessoa; //pascalCase - camelCase
-String dadosOutraPessoa;
-
-
-
-EditText editPrimeiroNome;
-EditText editSobrenomeAluno;
-EditText editNomeCurso;
-EditText editTelefoneContato;
-
-Button btnLimpar;
-Button btnSalvar;
-Button btnFinalizar;
+    Button btnLimpar;
+    Button btnSalvar;
+    Button btnFinalizar;
 
 
     @Override
@@ -38,10 +32,6 @@ Button btnFinalizar;
         setContentView(R.layout.activity_main);
 
         pessoa = new Pessoa();
-        //pessoa.setPrimeiroNome("Flavio");
-        //pessoa.setSobreNome("Fracalossi");
-        //pessoa.setCursoDesejado("Android");
-        //pessoa.setTelefoneContato("48998218360");
 
         outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("Luiz");
@@ -89,33 +79,13 @@ Button btnFinalizar;
                 pessoa.setSobreNome(editSobrenomeAluno.getText().toString());
                 pessoa.setCursoDesejado(editNomeCurso.getText().toString());
                 pessoa.setTelefoneContato(editTelefoneContato.getText().toString());
-                Toast.makeText(MainActivity.this, salvo+pessoa.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, salvo + pessoa.toString(), Toast.LENGTH_LONG).show();
 
             }
         });
 
-/*
-        dadosPessoa = "Primeiro nome: ";
-        dadosPessoa += pessoa.getPrimeiroNome();
-        dadosPessoa += " Sobrenome: ";
-        dadosPessoa += pessoa.getSobreNome();
-        dadosPessoa += " Curso Desejado: ";
-        dadosPessoa += pessoa.getCursoDesejado();
-        dadosPessoa += " Telefone de Contado: ";
-        dadosPessoa += pessoa.getTelefoneContato();
-
-
-        dadosOutraPessoa = "Primeiro nome: ";
-        dadosOutraPessoa += outraPessoa.getPrimeiroNome();
-        dadosOutraPessoa += " Sobrenome: ";
-        dadosOutraPessoa += outraPessoa.getSobreNome();
-        dadosOutraPessoa += " Curso Desejado: ";
-        dadosOutraPessoa += outraPessoa.getCursoDesejado();
-        dadosOutraPessoa += " Telefone de Contado: ";
-        dadosOutraPessoa += outraPessoa.getTelefoneContato();
-*/
-        Log.i("POOAndroid", "Objeto pessoa: "+pessoa.toString());
-        Log.i("POOAndroid", "Objeto outraPessoa: "+outraPessoa.toString());
+        Log.i("POOAndroid", "Objeto pessoa: " + pessoa.toString());
+        Log.i("POOAndroid", "Objeto outraPessoa: " + outraPessoa.toString());
 
 
     }
