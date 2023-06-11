@@ -10,9 +10,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import devandroid.flavio.applistacurso.R;
+import devandroid.flavio.applistacurso.controller.PessoaController;
 import devandroid.flavio.applistacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
+    PessoaController controller;
     Pessoa pessoa;
     Pessoa outraPessoa;
 
@@ -30,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        controller = new PessoaController();
+
+        controller.toString();
 
         pessoa = new Pessoa();
 
@@ -80,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(editNomeCurso.getText().toString());
                 pessoa.setTelefoneContato(editTelefoneContato.getText().toString());
                 Toast.makeText(MainActivity.this, salvo + pessoa.toString(), Toast.LENGTH_LONG).show();
+
+                controller.salvar(pessoa);
 
             }
         });
